@@ -1,0 +1,9 @@
+def even(number):
+    if number % 2:
+        return True
+    return False
+
+print(even(3))
+print(even(4))
+print(even(23))
+print(even(38))

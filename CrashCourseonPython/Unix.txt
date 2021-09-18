@@ -1,0 +1,118 @@
+Summary
+Use mkdir to create new directories.
+The touch command creates empty files.
+You can use > to redirect the output of a command into a file.
+>> will append command output to the end of a file.
+Print a text file to the command line using cat.
+Inspect properties of a text file with wc.
+Peak at the beginning and end of a text file with headand tail.
+Scroll through a large text file with less.
+nano is simple text editor.
+
+(The path to the Trash Bin is ~/.Trashon Mac and ~/.local/share/Trash on Ubuntu)
+
+cp(-r for folders), mv, rm(delete)
+
+Use man to look up the documentation for a command.
+If you can’t think of the name of a command use apropos to search for a word associated with that command.
+If you have access to a web browser, using a search engine might be better than man or apropos.
+
+Metacharacter
+Meaning
+.
+Any Character
+\w
+A Word
+\W
+Not a Word
+\d
+A Digit
+\D
+Not a Digit
+\s
+Whitespace
+\S
+Not Whitespace
+[def]
+A Set of Characters
+[^def]
+Negation of Set
+[e-q]
+A Range of Characters
+^
+Beginning of String
+$
+End of String
+\n
+Newline
++
+One or More of Previous
+*
+Zero or More of Previous
+?
+Zero or One of Previous
+|
+Either the Previous or the Following
+{6}
+Exactly 6 of Previous
+{4, 6}
+Between 4 and 6 or Previous
+{4, }
+More than 4 of Previous
+
+
+grep and egrep can be used along with regular expressions to search for patterns of text in a file.
+Metacharacters are used in regular expressions to describe patterns of characters.
+find can be used to search for the names of files in a directory.
+
+Logical Flag
+Meaning
+Usage
+-gt
+Greater Than
+[[ $planets -gt 8 ]]
+-ge
+Greater Than or Equal To
+[[ $votes -ge 270 ]]
+-eq
+Equal
+[[ $fingers -eq 10 ]]
+-ne
+Not Equal
+[[ $pages -ne 0 ]]
+-le
+Less Than or Equal To
+[[ $candles -le 9 ]]
+-lt
+Less Than
+[[ $wives -lt 2 ]]
+-e
+A File Exists
+[[ -e $taxes_2016 ]]
+-d
+A Directory Exists
+[[ -d $photos ]]
+-z
+Length of String is Zero
+[[ -z $name ]]
+-n
+Length of String is Non-Zero
+[[ -n $name ]]
+
+Here’s a table of some of the useful logical operators in case you need to reference how they’re used later:
+Logical Operator
+Meaning
+Usage
+=~
+Matches Regular Expression
+[[ $consonants =~ [aeiou] ]]
+=
+String Equal To
+[[ $password = "pegasus" ]]
+!=
+String Not Equal To
+[[ $fruit != "banana" ]]
+!
+Not
+[[ ! "apple" =~ ^b ]]
+
